@@ -54,8 +54,9 @@ p {
     border: none;
     padding: 10px;
     cursor: pointer;
-    display: block;
-    margin: 10px auto;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
 }
 
@@ -65,10 +66,12 @@ p {
     border: none;
     padding: 10px;
     cursor: pointer;
-    display: block;
-    margin: 10px auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 24px;
 }
+
 
 .scrollButton-Up:hover {
     background-color: #555;
