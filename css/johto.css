@@ -1,0 +1,65 @@
+.container{
+    display: flex;
+
+}
+
+.johtolist li{
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+    margin: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    line-height: 2em;
+    cursor: pointer;
+}
+
+.johtolist a{
+    text-decoration: none;
+    color: #000;
+}
+
+.johtolist li:hover{
+    background-color: #fff;
+    text-decoration: underline;
+}
+
+.johtolist li.active {
+    background-color: #555;
+}
+
+.details{
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 15px;
+    line-height: 2em;
+    text-align: center;
+    margin-left: 300px;
+}
+
+.pokedetails{
+    display: none;
+}
+
+.pokedetails:target{
+    display: block;
+}
+
+img{
+    height: 500px;
+    width: 500px
+}
+
+th, td{
+    border: 1px #000 solid;
+    padding: 5px;
+}
+
+table{
+    width: 100%;
+    margin: auto;
+    border-collapse: collapse;
+}
