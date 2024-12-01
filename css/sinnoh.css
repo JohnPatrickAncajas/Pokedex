@@ -1,0 +1,55 @@
+.pokemons{
+    display: flex;
+}
+
+.SinnohPoke{
+    width: 25%;
+    height: 650px;
+    overflow-y: scroll;
+}
+
+.SinnohPoke ol li{
+    text-align: left;
+    margin: 10px;
+    font-size: 20px;
+}
+
+.SinnohPoke ol li a{
+    text-decoration:none;
+    color:black;
+}
+
+.SinnohPoke ol li a:hover{
+    text-decoration:underline;
+}
+
+.pokepfp{
+    width:50px;
+    height:50px;
+    animation: bounce 1s linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce{
+    0% {
+        transform: scale(1, 1) translateY(0);
+    }
+    10% {
+        transform: scale(var(--bounce-start-scale-x, 1.1), var(--bounce-start-scale-y, .9)) translateY(0);
+    }
+    30% {
+        transform: scale(var(--bounce-jump-scale-x, .9), var(--bounce-jump-scale-y, 1.1)) translateY(var(--bounce-height, -.5em));
+    }
+    50% {
+        transform: scale(var(--bounce-land-scale-x, 1.05), var(--bounce-land-scale-y, .95)) translateY(0);
+    }
+    57% {
+        transform: scale(1, 1) translateY(var(--bounce-rebound, -.125em));
+    }
+    64% {
+        transform: scale(1, 1) translateY(0);
+    }
+    100% {
+        transform: scale(1, 1) translateY(0);
+    }
+}
